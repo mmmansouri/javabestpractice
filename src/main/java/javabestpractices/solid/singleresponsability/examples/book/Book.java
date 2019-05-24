@@ -29,4 +29,15 @@ public class Book {
 
     }
 
+    //This an anti-pattern against the "Single Responsibility Principle", Use BookPrinter Class for the printing feature.
+    public void printBookText(){
+        System.out.println(this.text);
+    }
+
+
+    //This an anti-pattern against the "Single Responsibility Principle", Use BookLocator Class for the printing feature.
+    public void getBookLocation(){
+        System.out.println(this.text);
+    }
+
 }
